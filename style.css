@@ -1,0 +1,1261 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body{
+    width: 100%;  /* body ki width fix ki hai taky image sahi tarhn aa saky */
+}
+
+.image_Div{
+    /* margin-top: 1500px; */
+    position: absolute;  /* ye property isliye lgai hai taky is image ko screen ki layer se hata saken or apna code is image ke opar likh saken. warna ye image hamen code likhne nahi degi apne opar */
+    z-index: -1;         /* ye property image ko screen ke peechy wali layer mein ley jaa kar fix kar rhi hai taky iske opar ham code likh saken.*/
+}
+
+.image_Div img{
+    width: 100%;     /* image ki width pori screen pe apply kar rhy hain */
+    display: block;  /* by-default pictures mein jo margins hoge wo khatam kar rhy hain */
+}
+
+.header{
+    width: 100%;
+    height: 138px;
+    /* border: 2px solid red; */
+}
+
+.top_div{
+    width: 100%;
+    height: 50px;
+    background-color: #212121;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.first_div{
+    width: 216px;
+    height: 100%;
+    display: flex;
+    border: 1px solid transparent;
+    align-items: center;
+    padding-left: 30px;
+    gap: 7px;
+}
+
+.C_icone{
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-color: #303030;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.C_icone:hover{
+    background-color: #425720;
+}
+
+.second_div{
+    width: 552px;
+    height: 100%;
+    display: flex;
+    border: 1px solid transparent;
+    align-items: center;
+    padding-left: 9px;
+
+}
+
+.icon_size{
+    width: 26px;
+    height: 22px;
+}
+
+.second_div p{
+    font-size: 17px;
+    font-weight: 600;
+    color: white;
+    letter-spacing: 1px;
+    padding: 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav_btn{
+    width: 114px;
+    height: 29px;
+    border: none;
+    outline: none;
+    background-color: #a2d84c;
+    margin-bottom: 3px;
+    margin-left: 30px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.nav_btn:hover{
+    background-color: #bbe478;
+}
+
+
+.navbar{
+    width: 100%;
+    height: 85px;
+    /* background-color: transparent; */
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar img{/* T   R   B   L */
+     padding: 2px 0px 5px 15px;
+}
+
+.ul_list{
+    height: 100%;
+    width: 895px;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.ul_list li{
+    list-style-type: none;
+}
+
+.ul_list li a{
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    font-weight: 600;
+    padding-right: 2px;
+    word-spacing: 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 21px
+}
+
+.ul_list li a:hover{
+    color: black;
+    border-bottom: 10px solid #febd19;
+    font-weight: 700;
+    margin-top: 21px;
+}
+
+.main_Section{
+    width: 100%;
+    height: 524px;
+    border: 2px solid transparent;
+    background-image: url("./Website_images/header_image1.jpeg");
+    background-size: cover;
+    background-position: center;
+    padding-top: 160px;
+    text-align: center;
+}
+
+.main_sec_child{
+    width: 100%;
+    height: 74px;
+    /* border: 1px solid #5900ff; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.empty_sides{
+    width: 346px;
+    height: 100%;
+    border: 1px solid transparent;
+    background-color: #a2d84c;
+}
+
+.Main_h1{
+    font-size: 78px;
+    font-weight: 500;
+    color: #ffffff;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.main_Section p{
+    font-size: 23px;
+    font-weight: 300;
+    padding-top: 30px;
+    color: #ffffff;
+    font-family:sans-serif;
+    margin-bottom: 40px;
+}
+
+.main_Sec_btn{
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 11px 42px 11px 42px;
+    border: none;
+    border-radius: 4px;
+    background-color: #febd19;
+    box-shadow: 0px 4px 1px 0px #ff8800;
+}
+
+.main_Sec_btn:hover{
+    cursor: pointer;
+    color: #f1ecec;
+    box-shadow: 0px 0px 5px black, 0px 4px 1px 0px #ff8800;
+}
+
+
+.slider_img_cutomise{
+    width: 100%;
+    height: 524px;
+}
+
+
+/* Swiper Scrolling Images */
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+
+
+/* OUR ADVANTAGE Section start */
+
+.Advantages_Sec{
+    width: 100%;
+    height: 490px;
+    /* border: 1px solid #ff0000; */
+    background-color: white;
+}
+
+.Adv_heading {
+    width: 100%;
+    height: 111px;
+    border: 1px solid transparent;
+    margin-top: 26px;
+    text-align: center;
+}
+
+.H_black{
+    font-size: 46px;
+    font-weight: bolder;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+}
+
+.sp_green{
+    color:#678e19;
+}
+
+.Adv_heading pre{
+    font-size: 13.5px;
+    font-weight: 900;
+    padding-top: 8px;
+    color: #bcbfc1;
+}
+
+/* ADVANTAGES KA main icons section start */
+
+.Adv_Icon_main {
+    width: 100%;
+    height: 267px;
+    /* border: 1px solid black; */
+    margin-top: 34px;
+    padding-left: 62px;
+   /* padding-right: 66px; */   /* in cards ko picture ke hisab se div mein karne ke 2 tariqe hain pehla right or left side padding dey kar display flex space-between kar den to cards adjust ho jaenge*/
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap:37px;  /* dosra main div ko left side se padding dey kar gap ki property se gap denge to ho jaega kiyun ke gap ki property first element ko chor kar uske aagy ke elements pe spacing apply karti hai*/
+}
+
+.Adv_icons_div{
+    width: 214px;
+    height: 100%;
+    border: 1px solid transparent;
+    text-align: center;
+}
+
+.icon_round_div {
+    height: 169px;
+    width: 171px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+
+    &:hover{
+        box-shadow: 0px 0px 7px 0 rgba(0,0,0, 0.2);
+
+        animation-name: Changing_color;   
+        animation-duration: 2s;          
+        animation-iteration-count: 1;    
+        animation-direction: normal;  
+        animation-play-state: normal;
+    }
+}
+
+@keyframes Changing_color {
+    from{ transform: scale(0.9);}
+    to{transform: scale(1);}
+}
+
+
+.Adv_icons_div h4{
+    margin-top: 17px;
+    font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.Adv_icons_div p{
+    margin-top: 4px;
+    line-height: 15px;  /* ye property opar or neechy wali line ke beech space deti hai */
+    font-size: 15px;
+    color: #bcbfc1;
+    font-weight: 300;
+    font-family:sans-serif;
+
+}
+
+
+/* yahn se About Us ke section ka kaam start */
+
+.About-us_Sec{
+    width: 100%;
+    height: 472px;
+    /* border: 1px solid red; */
+    background-image: url("Website_images/About-us.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+
+.center{
+    width: 100%;
+    text-align: center;
+}
+
+.left_content {
+    width: 522px;
+    height: 319px;
+    border: 2px solid transparent;
+    margin-left: 82px;
+    margin-top: 25px;
+}
+
+.left_content p{
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: sans-serif;
+    margin-bottom: 11px;
+}
+
+.top_Gap_btn{
+    margin-top: 28px;
+}
+
+
+/* OUR SERVICES ka kaam start yahn se */
+ 
+.our_services_Sec{
+    width: 100%;
+    height: 472px;
+    border: 1px solid transparent;
+    background-color: white;
+}
+
+.services_heading_div{
+    text-align: center;
+}
+
+.services_heading_div h1 {
+    margin-top: 28px;
+}
+
+.services_heading_div pre {
+    margin-top: 9px;
+    font-size: 12.6px;
+    font-weight: 900;
+    color: #bcbfc1;
+}
+
+.our_servces_icon_Div {
+    width: 100%;
+    height: 256px;
+    border: 1px solid transparent;
+    margin-top: 30px;
+    display: flex;
+    gap: 17px;
+    padding-left: 82px;
+}
+
+.star_card_div {
+    height: 100%;
+    width: 282px;
+    border: 1px solid transparent;
+    display: flex;
+    justify-content: center;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover{
+        transform: scale(1.01)
+    }
+}
+
+.star_div {
+    width: 78px;
+    height: 76px;
+    border: 1px solid transparent;
+    background-color: #febd19;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.star_div:hover{
+    transform: rotateZ(360deg);
+}
+
+.card_content_div {
+    width: 282px;
+    height: 216px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background-color: #f1f3f2;
+    margin-top: 37px;
+    display: flex;
+    justify-content: center;
+
+    &:hover{
+        box-shadow: 0px 0px 5px 0px rgba(0,0,0, 0.2); 
+    }
+}
+
+.text_content {
+    width: 221px;
+    text-align: center;
+    margin-top: 65px;
+}
+
+.text_content h4{
+    font-weight: bolder;
+    font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.text_content p{
+    line-height: 15px;  /* ye property opar or neechy wali line ke beech space deti hai */
+    font-size: 14px;
+    color: #b9babb;
+    font-weight: 600;
+    font-family:sans-serif;
+    margin-top: 4px;
+} 
+
+.text_content button {
+    font-size: 19px;
+    background: none;
+    border: none;
+    margin-top: 22px;
+}
+
+.text_content a{
+    color: #8cc63e;
+}
+
+
+
+/* OUR SERVICES CARD ko dosry tariqe se yahn se bana rhy hain sir Ameen */
+/* 
+.Star_Card_Div {
+    height: 217px;
+    width: 282px;
+    border: 1px solid red;
+    background-color: #f1f3f2;
+    margin-top: 37px;
+    margin-left: 82px;
+    border-radius: 7px;
+    position: relative;
+    text-align: center;
+}
+
+.circle_star_div {
+    height: 78px;
+    width: 78px;
+    position: absolute;
+    top: -38px;
+    left: 101px;
+    border: 1px solid blueviolet;
+    background-color: #febd19;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Star_Card_Div h4 {
+    font-size: 17px;
+    margin-top: 64px;
+    color: black;
+}
+
+.Star_Card_Div pre {
+    font-size: 14px;
+    margin-top: 2px;
+    font-weight: 600;
+    color: #aaabac;
+    line-height: 15px;
+    word-spacing: -6px;
+    margin-bottom: 23px;
+}
+
+.Star_Card_Div a{
+    font-size: 21px;
+    font-weight: 400;
+    color: #8cc63e;
+} */
+
+
+/* Portfolio ka kaam start */
+
+.Portfolio_Sec{
+    width: 100%;
+    height: 736px;
+    border: 2px solid transparent;
+    text-align: center;
+    background-color: black;
+}
+
+.portfolio_heading {
+    width: 100%;
+    height: 201px;
+    border: 1px solid transparent;
+    text-align: center;
+}
+
+.portfolio_heading h1 {
+    font-size: 47px;
+    font-weight: bolder;
+    color: white;
+    margin-top: 29px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.text_portfolio{
+    color:#678e19;
+}
+
+.portfolio_heading pre {
+    color: #a0a2a5;
+    margin-top: 6px;
+    line-height: 16px;
+    font-weight: 600;
+    font-family: sans-serif;
+    font-size: 15px;
+    word-spacing: -2.5px;
+}
+
+.portfolio_heading ul {
+    height: 67px;
+    border: 1px solid transparent;
+    display: flex;
+    gap: 28px;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio_heading ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+.portfolio_heading ul li a{
+    list-style-type: none;
+    color: rgb(233, 227, 227);
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    &:hover{
+        color: #fe821c;
+    }
+}
+
+.Portfolio_cards_Div {
+    width: 100%;
+    /* height: 466px; */
+    height: auto;
+    border: 2px solid transparent;
+    display: grid;                                    /* is se 2 direction ko ham aik sath control kar sakty hain */
+    grid-template-columns: auto auto auto auto auto; /* is hamne equaily 5 clumns bnaye ye auto ki property tab dety hain jab hamne apne item ko height width fix ki hui hoti hai */
+    grid-template-rows: auto auto;                   /* is hamne equaily 2 rows bnaye */
+    justify-content: center;                         /* is hamne center mein kar diyya sab grid cards ko */
+}
+
+.P_card{
+    width: 233px;
+    height: 233px;
+    border: 1px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+
+    &:hover{
+        background-color: #ef4136;
+    }
+}
+
+.bg_color1{
+    background-color: white;
+}
+
+.bg_color2{
+    background-color: #5e5e5e;
+}
+
+.bg_color3{
+    background-color: #d2d3d5;
+}
+
+.bg_color4{
+    background-color: #838383;
+}
+
+.bg_color5{
+    background-color: white;
+}
+
+.bg_color6{
+    background-color: #a3a3a3;
+}
+
+.bg_color7{
+    background-color: #d2d3d5;
+}
+
+.bg_color8{
+    background-color: #ffffff;
+}
+
+.bg_color9{
+    background-color: #a3a3a3;
+}
+
+.bg_color10{
+    background-color: #5e5e5e;
+}
+
+
+/* Process section start yahn se */
+
+.Process_Sec {
+    width: 100%;
+    height: 503px;
+    border: 1px solid transparent;
+    text-align: center;
+    background-color: white;
+} 
+
+.Process_Sec h1 {
+    margin-top: 66px;
+}
+
+.Process_Sec pre {
+    margin-top: 8px;
+    color: #a0a2a5;
+    line-height: 16px;
+    font-weight: 600;
+    font-family: sans-serif;
+    font-size: 15px;
+    word-spacing: -2.px;
+    margin-bottom: 37px;
+}
+
+.Process_Divs {
+    width: 1182px;
+    height: 249px;
+    border: 1px solid transparent;
+    background-color: white;
+    margin: auto;
+    display: flex;
+    gap: 57.7px;
+    overflow: hidden;
+}
+
+.Pro_Card {
+    width: 159px;
+    height: 100%;
+    border: 1px solid transparent;
+}
+
+
+.P_Round_div {
+    width: 145px;
+    height: 145px;
+    border: 4px solid #d1d2d4;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.P_Round_div:hover{
+    box-shadow: 0px 0px 4px 1px rgba(0,0,0, 0.2);
+}
+
+.P_Round_div::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    height: 4px;
+    width: 66px;
+    background-color: #d1d2d4;
+}
+
+.num_circle {
+    width: 34px;
+    height: 34px;
+    border: 1px solid transparent;
+    background-color: #febd19;
+    border-radius: 50%;
+    position: absolute;
+    top: -17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+.Pro_Card h4 {
+    color: #191919;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: sans-serif;
+    margin-top: 21px;
+}
+
+.Pro_Card pre {
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 15px;
+    color: #a0a2a5;
+}
+
+
+/* PEOPLE ABOUT US ka section yahn se start kar rhy hain */
+
+.About_us_Sec{
+    width: 100%;
+    height: 542px;
+    border: 2px solid transparent;
+    text-align: center;
+    margin-top: 0px;
+    background-color: #f2f2f2;
+}
+
+.About_us_Sec h1 {
+    margin-top: 28px;
+}
+
+.About_us_Sec pre {
+    font-size: 15px;
+    font-weight: 600;
+    color: #c3c4c6;
+    margin-top: 6px;
+    font-family: system-ui;
+    line-height: 16px;
+}
+
+.people_comments {
+    width: 1180px;
+    height: 296px;
+    border: 1px solid transparent;
+    margin: auto;
+    margin-top: 37px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+}
+
+
+.people_comments .comment_1{
+    width: 590px;
+    height: 148px;
+    border: 1px solid transparent;
+    display: flex;
+}
+
+.people_comments .comment_1 .P1_profile {
+    height: 102px;
+    width: 103px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    margin-left: 28px;
+    margin-top: 16px;
+}
+
+.P1_profile img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.comment_text {
+    width: 373px;
+    height: 78px;
+    margin-left: 29px;
+    border: 1px solid transparent;
+    margin-top: 23px;
+}
+
+.comment_text h3{
+    color: #191919;
+    text-align: left;
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.comment_text pre {
+    text-align: left;
+    color: #191919;
+    line-height: 14px;
+}
+
+
+/* skills Section yahn se start ho rha hai*/
+ 
+.Skills {
+    width: 100%;
+    height: 489px;
+    border: 1px solid transparent;
+    text-align: center;
+    background-color: white;
+}
+
+.Skills h1{
+    margin-top: 34px;
+} 
+
+.Skills pre {
+    margin-top: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #cdcdcf;
+    line-height: 16px;
+    font-family: sans-serif;
+    word-spacing: -2.5px;
+}
+
+.gol_matol_Divs {
+    width: 974px;
+    height: 247px;
+    border: 1px solid transparent;
+    margin: auto;
+    margin-top: 42px;
+    display: flex;
+    gap: 69px;
+}
+
+.circle_border {
+    width: 169px;
+    height: 169px;
+    margin-top: 16px;
+    border-radius: 50%;
+    margin-left: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* is div ko ham half bana rhy hain  */
+
+.circle_border_width {
+    width: 202px;
+    height: 202px;
+    border-radius: 50%;
+    position: absolute;
+    /* background: conic-gradient(transparent 0%, transparent 56%, #febd19 56%, #febd19 100%); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ye div half circle ke andar rhega usko cover karne ke liye */
+
+.center_white_circle {
+    width: 135px;
+    height: 135px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 29px;
+    font-weight: 900;
+    font-family: sans-serif;
+}
+
+/* Is div ko hamne sab se end mein create kiyya baqi ke divs ke opar taky ham iske neechy likha text sahi se center mein likh kar dey saken */
+
+.Circle_Card_Div{
+    /* width: 202px; */
+    height: 100%;
+    /* border: 1px solid magenta; */
+    text-align: center;
+}
+
+.Circle_Card_Div h3 {
+    font-size: 19px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 36px;
+}
+
+
+/* Start your new Project Section Start yahn se */
+
+
+.New_Project_Sec{
+    width: 100%;
+    height: 344px;
+    border: 1px solid transparent;
+    text-align: center;
+    background-color: #8ec63f;
+}
+
+.New_Project_Sec h1 {
+    font-size: 69px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 35px;
+    color: white;
+    margin-bottom: 31px;
+    border: 1px solid transparent;
+}
+
+.New_Project_Sec form {
+    width: 1012px;
+    border: 1px solid transparent;
+    margin: auto;
+    gap: 15px;
+    text-align: left;
+    display: flex;
+    gap: 20px;
+}
+
+.New_Project_Sec form input {
+    width: 246px;
+    height: 49px;
+    border-radius: 5px;
+    border: none;
+    font-size: 19px;
+    font-weight: 300;
+    color: black;
+    padding-left: 22px;
+    color: #f1f2f5;
+    box-shadow: 0px 0px 4px 0px rgba(247, 245, 245, 0.5);
+
+    &:focus{background-color: #e9f7d9f8;}
+}
+
+.New_Project_Sec form button {
+    width: 195px;
+    height: 45px;
+    margin-left: 14px;
+    border-radius: 5px;
+    font-size: 19px;
+    font-weight: 600;
+    background-color: #febd19;
+    border: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-shadow: 0px 4px 0px 0px #ff8800;
+}
+
+.New_Project_Sec pre {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 34px;
+    word-spacing: -6px;
+    color: rgb(245, 241, 241);
+}
+
+
+/* OUR CONTACTS ka Section yahn se start */
+
+.OUR_CONTACT_SEC {
+    width: 100%;
+    height: 272px;
+    border: 1px solid transparent;
+    text-align: center;
+    background-color: white;
+}
+
+.OUR_CONTACT_SEC h1 {
+    margin-top: 31px;
+}
+
+.OUR_CONTACT_SEC pre {
+    margin-top: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    word-spacing: -2px;
+    color: #cdcdcf;
+    font-family: sans-serif;
+    margin-bottom: 25px;
+}
+
+.contact_main {
+    margin-top: 10px;
+    margin: auto;
+    width: 967px;
+    height: 40px;
+    border: 1px solid transparent;
+    text-align: left;
+    display: flex;
+}
+
+.contact_main pre {
+    color: black;
+    font-size: 26.4px;
+    font-weight: normal;
+    margin-left: 11px;
+    font-family: sans-serif;
+    margin-top: 1px;
+}
+
+.contact_main2 {
+    width: 831px;
+    height: 29px;
+    border: 1px solid transparent;
+    margin: auto;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.contact_main2 p {
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 15px;
+}
+
+.Map_Sec {
+    width: 100%;
+    height: 377px;
+    border: 1px solid transparent;
+}
+
+.Map_Sec iframe{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Footer ka kaam start yahn se  */
+
+footer {
+    width: 100%;
+    height: 368px;
+    border: 2px solid transparent;
+    background-color: #678e19;
+    padding-top: 56px;
+    display: flex;
+}
+
+.Footer_div_1 {
+    width: 236px;
+    height: 252px;
+    margin-left: 87px; 
+}
+
+.Footer_div_1 img {
+    width: 196px;
+    margin-left: -19px;
+}
+
+.Footer_div_1 pre {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 14px;
+    word-spacing: 2px;
+    color: #f2f3f2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Footer_div_1 h3 {
+    font-size: 19px;
+    color: #fefffe;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 66px 0px 10px 9px;
+}
+
+.Footer_div_2 {
+    width: 212px;
+    height: 256px;
+    margin-left: 121px;
+    border-right: 2px solid #88c03a;
+    border: 1px solid transparent;
+    color: #fefffe;
+    display: inline-block;
+}
+
+.Footer_div_2 h2 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #fefffe;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: -8px;
+    margin-bottom: 21px;
+}
+
+.Footer_div_2 a {
+    font-size: 15px;
+    font-weight: 600;
+    color: #f2f3f2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: block;
+    line-height: 29px;
+}
+
+.and3 {
+    margin-left: 62px;
+    width: 233px;
+}
+
+.Footer_div4 {
+    width: 176px;
+    height: 245px;
+    border: 1px solid transparent;
+    margin-left: 70px;
+}
+
+.Footer_div4 h2{
+    font-size: 25px;
+    font-weight: 700;
+    color: #fefffe;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: -8px;
+    margin-bottom: 12px;
+}
+
+.Footer_div4 p{
+    font-size: 16px;
+    font-weight: 600;
+    display: inline-block;
+    color: #f2f3f2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 3px;
+}
+
+.icon_para_center{
+    height: 10px;
+    display: flex;
+    align-items: center;
+}
+
+
+.for_center {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.Footer_div4 h3 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #fefffe;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 29px;
+}
+
+.F_icons_divs {
+    display: flex;
+    gap: 6px;
+}
+
+.round_icons {
+    width: 30px;
+    height: 29px;
+    border: 1px solid transparent;
+    background-color: #30302f;
+    margin-top: 16px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+/* NOTES
+
+
+CSS Tricks => Website
+Bootstrap  => Website  for buttons and cards
+slick      => Website  for slider
+LightBox   => Website  for image interface on screen after click
+Boxicons   => Website  for customise icons use with Boxicons CDN
+panacloud  => logo svg to png
+Swiperjs   => Website for sliding images
+
+
+positon: absolute; ko agr (top 0) (left 0) denge to ye apne parent div ke top left se jaa kar chipak jaega agr
+us parent div mein position: reletive; laga hoga to warna ye parent ke parent div ke pass bhi jaa sakta hai agr usme
+position relative laga hua hoga to. matlab isy sirf position: reletive waly div ki zrorat hoti hai wo chahy js div mein bhi laga ho.
+
+
+background: conic-gradient(transparent 0%, transparent 56%, black 56%, black 100%);
+
+is property se ham aik div ko half bana sakty hain jitna chahen utna. ye 4 propertys leta hai first wali ko 0% rakhna hai
+second wali ko 50% laga kar bad mein usy browser se set karna hai jitna karna chahen phir third wali property ko bhi same
+second wali property utha kar dey denge or forth wali property ko 100% hi rakhenge.
+(transparent 56%) ko km karenge to border barhega or agr zada karenge to border chota hoga.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
